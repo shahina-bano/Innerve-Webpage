@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INNERVE-IGDTUW</title>
-    <link rel="stylesheet" href="style.css">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="styling.css">
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -38,13 +38,13 @@
                         <a href="#" class="nav-link">home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link">about us</a>
+                        <a href="#" class="nav-link">about us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="gallery.html" class="nav-link">Gallery</a>
+                        <a href="#" class="nav-link">documentation</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Sponsers</a>
+                        <a href="#" class="nav-link">reviews</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link">contact</a>
@@ -56,33 +56,30 @@
     <!-- navBar close -->
     <header>
         <!-- <a href="#" clas="logo">fit<span>ness</span></a> -->
-        <div class="college-logo ml-4">
+        <div class="college-logo">
         </div>
-        <h1 class="text-center mt-5 ml-5 col-8 col-sm-12" id="collg-name"><a href="#" class="logo">Indira Gandhi Delhi Technical University <br> for
-                Women</a></h1>
+        <h1 class="text-center mt-5 ml-5"><a href="#" class="logo">My University XMZ</a></h1>
         <!-- <div class="toggle"><img src="toggle.jpeg"></div> -->
 
     </header>
-    <div class="banner d-flex justify-content-start text-center">
-        <video src="images/v2.mp4" autoplay muted loop type="mp4"></video>
-        <div class="textBox container float-left">
+    <div class="banner d-flex justify-content-around col-12 text-center">
+        <video src="v2.mp4" autoplay muted loop type="mp4"></video>
+        <div class="textBox container col-10">
             <h2 class="mt-5">Presenting...</h2>
-            <h1 class="text-center mt-5 p-2">INNERVE 2020</h1>
+            <h1 class="text-center mt-5 p-2">Tech Fest 2020</h1>
             <h5 class="m-4">Hurry up !! catch a bus, be first in the rush</h5>
-            <script>
-                function redirect(){
-                    window.location.href="form.html";
-                }
-            </script>
+            <button id="bttn" class=" btn btn-success mt-4">Register now</button>
         </div>
+        <div class="imgBox">
+            <!-- <img src="man.png"> -->
+        </div>
+        
+
     </div>
-    <button onclick="redirect()" id="bttn" class=" btn btn-success mt-4">Register now</button>
     <script>
-        $(document).ready(function () {
-            document.querySelector(".hamburger-menu").addEventListener("click", () => {
-                document.querySelector(".navigation").classList.toggle("change");
-            });
-        })
+        document.querySelector(".hamburger-menu").addEventListener("click", () => {
+            document.querySelector(".navigation").classList.toggle("change");
+        });
     </script>
 </body>
 
